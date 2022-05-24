@@ -1,0 +1,32 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-weight: 700;
+  font-family: Roboto, Poppins;
+}
+table{
+  background-color: #02384c;
+  table-layout: fixed;
+  width: 60%;
+  margin: 10% auto;
+  padding: 1rem;
+}
+table, td{
+  border: 1px solid red;
+}
+thead th {
+  padding: 1rem;
+  background-color: #e1d9d1;
+
+}
+
+tbody td{
+  padding: 1rem;
+  text-align: center;
+  color: #fff;
+  margin: 5%;
+  width: 20%;
+}

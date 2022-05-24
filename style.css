@@ -1,0 +1,228 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html, body {
+  height: 100%;
+  width: 100%;
+  font-family: Roboto, Poppins;
+}
+header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #02384c;
+  background-color: #fff;
+  padding: 20px 10px;
+  position: sticky;
+  z-index: 999;
+  top: 0;
+  left: 0;
+}
+header h4 {
+  font-size: 2rem;
+  padding-left: 1rem;
+  color: #02384c;
+}  
+/* NAV */
+nav {
+  width: 60%;
+  display: flex;
+}
+nav ul{
+  width: 100%;
+  display: inline-flex;
+  padding-top: 0.7rem;
+  gap: 3rem;
+  font-weight: 700;
+  font-size: 1.2rem;
+  list-style-type: none;
+}
+nav ul li a {
+  text-decoration: none;
+}
+/* MAIN */
+main {
+  padding: 1rem 0.2rem;
+}
+.intro {
+  display: flex;
+  flex-wrap: wrap;
+  height: 400px;
+    background-image: url(cas3.png);
+  background-repeat: no-repeat;
+  background-position: top left;
+}
+.intro-text {
+  width: 100%;
+  padding: 1rem;
+  position: relative;
+}
+.intro-text h2 {
+  background-color: #03678b;
+  border-radius: 100%;
+  width: 15%;
+  height: 70px;
+  font-size: 2rem;
+  text-align: center;
+  padding-top: 1rem;
+  color: #fff;
+  position: absolute;
+  right: 30%;
+  top: 5%;
+}
+.intro-text h1 {
+  background-color: #02384c;
+  border-radius: 100%;
+  width: 30%;
+  text-align: center;
+  height: 150px;
+  font-size: 2.5rem;
+  padding-top: 2rem;
+  color: #fff;
+  position: absolute;
+  right: 10%;
+  bottom: 40%;
+}
+.intro-text p {
+  background-color: #03678b;
+  border-radius: 100%;
+  width: 40%;
+  text-align: center;
+  height: 150px;
+  font-size: 1.5rem;
+  padding-top: 3rem;
+  color: #fff;
+  position: absolute;
+  right: 15%;
+  bottom: 0%;
+}
+.hero-img{
+  width: 50%;
+  height: 50vh;
+  background-image: url(cas3.png);
+  background-size: cover;
+  background-position: top;
+}
+img  {
+  width: 100%;
+  
+}
+.goal{
+  margin: 2% 0;
+}
+.goal h3 {
+  text-align: center;
+}
+.goal ul {
+  font-size: 1.2rem;
+  list-style-type: disc;
+}
+.main-content {
+  padding: 0.8rem;
+  display: flex;
+  justify-content: space-between;
+}
+.education, .job {
+  width: 49%;
+}
+.education section, .job section, .hobbies section {
+  background-color: #fff;
+  border: 1px solid #fff;
+  box-shadow: -2px -2px 2px #e1d9d1, 2px 2px 5px #e1d9d1;
+  padding: 1rem;
+  margin-bottom: 5%;
+}
+.goal h3, .education h3, .job h3, .hobbies h3, #contact-me h3{
+  font-size: 1.5rem;
+  padding: 1rem;
+  background-color: #03678b;
+  color: #fff;
+}
+.education section h4, .job section h4, .hobbies section h4 {
+  font-size: 1.2rem;
+  width: 80%;
+  margin-bottom: 1%;
+}
+.education section p, .job section p, .hobbies section p {
+  font-size: 1rem;
+  margin-bottom: 2%;
+  font-weight: 500;
+}
+.job section ul, .goal ul{
+  margin-left: 7%;
+  font-weight: 500;
+}
+.hobbies h3{
+  width: 50%;
+  margin: 0 auto;
+  text-align: center;
+}
+.hobbies div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.hobbies div section {
+  width: 48%;
+}
+/* CONTACT ME */
+form {
+  box-shadow: -2px -2px 20px #e1d9d1, 2px 2px 15px #e1d9d1;
+  width:60%;
+  padding: 20px 15px;
+  margin: 5% 20% 10%;
+  display: inline-block;
+  background-color: transparent;
+  border-radius: 5px;
+}
+label {
+  font-weight: 700;
+}
+label:nth-child(1){
+  display: flex;
+  justify-content: center;
+  font-size: 1.2rem;
+  background-color: #02384c;
+  padding: 1rem;
+  color: #fff;
+}
+
+input{
+	padding: 10px;
+	width:98%;
+  margin-bottom: 5%;
+  border: 1px solid #03678b;
+  border-radius: 5px;
+}
+textarea {
+  width: 98%;
+  height: 150px;
+}
+select{
+  padding: 0.5rem;
+  font-weight: 700;
+  outline: none;
+  font-size: 0.9rem;
+}
+ button{
+	width:70%;
+	margin: 0 15%;
+	padding: 10px;
+  font-size: 16px;
+  font-weight: 700;
+  border: 1px solid #03678b;
+  color: #fff;
+  background-color: #03678b;
+}
+
+
+
+/* MOBILE DEVICES */
+@media screen and (max-width: 40em) {
+  h2{
+    color: red;
+  }
+}

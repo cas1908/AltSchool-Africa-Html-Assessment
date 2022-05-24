@@ -1,0 +1,94 @@
+/* REGISTATION FORM PAGE */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  background-color:#03678b;
+  font-family: Roboto, Poppins;
+  font-weight: 700;
+  color: #fff;
+}
+
+header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #02384c;
+  background-color: #fff;
+  padding: 20px 10px;
+  position: sticky;
+  z-index: 999;
+  top: 0;
+  left: 0;
+}
+header h4 {
+  font-size: 2rem;
+  padding-left: 1rem;
+  color: #02384c;
+}  
+/* NAV */
+nav {
+  width: 50%;
+  display: flex;
+}
+nav ul{
+  width: 100%;
+  display: inline-flex;
+  padding-top: 0.7rem;
+  gap: 3rem;
+  font-size: 1.2rem;
+  list-style-type: none;
+}
+nav ul li a {
+  text-decoration: none;
+}
+form {
+  box-shadow: -2px -2px 2px #02384c, 2px 2px 5px #02384c;
+  width:60%;
+  margin: 5% auto;
+  padding: 15px;
+  font-size: 25px;
+  text-transform: capitalize;
+  background-color: #03678b;
+  border-radius: 5px;
+
+}
+label:nth-child(1){
+  display: flex;
+  justify-content: center;
+  font-size: 1.2rem;
+  background-color: #02384c;
+  padding: 1rem;
+  color: #fff;
+}
+input{
+	padding: 10px;
+	width:98%;
+  border: 1px solid #023b4c;
+  border-radius: 5px;
+  background-color: #fff;
+  outline: none;
+}
+select {
+	width: 50%;
+	padding: 10px;
+  font-size: 16px;
+  background-color: #03678b;
+  color: #fff;
+  font-weight: 700;
+    outline: none;
+}
+
+button{
+	width:70%;
+	margin: 0 15%;
+	padding: 10px;
+  font-size: 20px;
+  font-weight: 700;
+  color: #fff;
+  border: 1px solid #03678b;
+  background: linear-gradient(to top,#023b4c,#03678b);
+}

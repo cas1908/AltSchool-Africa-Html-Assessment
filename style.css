@@ -99,7 +99,7 @@ main {
   right: 15%;
   bottom: 0%;
 }
-.hero-img{
+/* .hero-img{
   width: 50%;
   height: 50vh;
   background-image: url(cas3.png);
@@ -109,7 +109,7 @@ main {
 img  {
   width: 100%;
   
-}
+} */
 .goal{
   margin: 2% 0;
 }
@@ -210,8 +210,8 @@ select{
  button{
 	width:70%;
 	margin: 0 15%;
-	padding: 10px;
-  font-size: 16px;
+	padding: 1rem;
+  font-size: 1rem;
   font-weight: 700;
   border: 1px solid #03678b;
   color: #fff;
@@ -222,7 +222,124 @@ select{
 
 /* MOBILE DEVICES */
 @media screen and (max-width: 40em) {
-  h2{
-    color: red;
+  body {
+    width: 100%;
+  }
+  header{
+    padding: 0.5rem 0;
+  }
+  /* NAV */
+nav {
+  width: 12%;
+  display: block;
+  position: absolute;
+  height: 100vh;
+  top: 20%;
+  right: 5%;
+  overflow-x: hidden;
+  padding: 0.5rem 0;
+}
+nav ul{
+  width: 100%;
+  position: absolute;
+  top: 20%;
+  display: flex;
+  flex-direction: column;
+  padding-top: 0.7rem;
+  font-weight: 700;
+  margin-left: 150%;
+  gap: 5rem;
+  font-size: 1.2rem;
+  list-style-type: none;
+}
+nav ul li a {
+  text-decoration: none;
+}
+  .menu-btn{
+    width: 100%;
+    height: 25px;
+    padding: 0.2rem;
+    border: 1px solid #02384c;
+  }
+  .menu-btn span {
+    border-bottom: 3px solid #03678b;
+    display: block;
+    margin-bottom: 10%;
+  }
+  /* MAIN */
+  .intro {
+    background-image: url(cas3.png);
+    background-repeat: no-repeat;
+    background-position: top left;
+  }
+  .intro-text h2 {
+    width: 25%;
+    height: 50px;
+    padding-top: 0.5rem;
+    left: 15%;
+    top: 15%;
+    font-size: 1.4rem;
+  }
+  .intro-text h1 {
+    font-size: 1.5rem;
+    width: 40%;
+    height: 100px;
+    padding-top: 1rem;
+    left: 0%;
+    bottom: 40%;
+  }
+  .intro-text p {
+    width: 47%;
+    height: 120px;
+    font-size: 1rem;
+    padding: 1.5rem;
+    right: 0%;
+  }
+  .goal ul {
+    font-size: 1rem;
+    width: 90%;
+  }
+  .main-content {
+    display: block;
+    padding: 0.8rem 0;
+  }
+  .education, .job {
+    width: 100%;
+  }
+  .goal h3, .education h3, .job h3, .hobbies h3, #contact-me h3 {
+    font-size: 1.2rem;
+    padding: 0.5rem;
+  }
+  .education section h4, .job section h4, .hobbies section h4 {
+    font-size: 1rem;
+    
+  }
+  .education section p, .job section p, .hobbies section p {
+    font-size: 0.9rem;
+  }
+  .hobbies h3{
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .hobbies div section {
+    width: 98%;
+  }
+  /* CONTACT ME */
+  form {
+    box-shadow: -2px -2px 2px #e1d9d1, 2px 2px 5px #e1d9d1;
+    width: 90%;
+    margin: 5% 5% 10%;
+  }
+  label:nth-child(1){
+    font-size: 1rem;
+    padding: 0.5rem;
+  }
+  select {
+    width: 98%;
+  }
+  button {
+    padding: 0.5rem;
+    font-size: 0.9rem;
   }
 }

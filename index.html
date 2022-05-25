@@ -14,7 +14,7 @@
     <header>
       <h4>cas</h4>
       <nav>
-        <div class="menu-btn">
+        <div class="menu-btn" onclick="toggle()">
           <span></span>
           <span></span>
           <span></span>
@@ -130,7 +130,7 @@
           <select name="priority" id="">
             <option value="">Collaborate on a project</option>
             <option value="">Recruit</option>
-            <option value="">Grab a coffe</option>
+            <option value="">Grab a coffee</option>
           </select>
           <br>
           <br>
@@ -140,7 +140,11 @@
       <a href="calculator.html">CALCULATOR</a>
     </main>
   </div>
-  <script src="script.js"></script>
+  <script>
+    function toggle(){
+      document.querySelector('header').classList.toggle('active');
+    }
+  </script>
 </body>
 
 </html>

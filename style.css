@@ -99,17 +99,6 @@ main {
   right: 15%;
   bottom: 0%;
 }
-/* .hero-img{
-  width: 50%;
-  height: 50vh;
-  background-image: url(cas3.png);
-  background-size: cover;
-  background-position: top;
-}
-img  {
-  width: 100%;
-  
-} */
 .goal{
   margin: 2% 0;
 }
@@ -219,6 +208,19 @@ select{
   color: #fff;
   background-color: #03678b;
 }
+.cal {
+  display: flex;
+  justify-content: center;
+  margin: 10% auto;
+}
+.cal a {
+  text-decoration: none;
+  background-color: #02384c;
+  color: #fff;
+  padding: 0.5rem 2rem;
+}
+
+
 
 
 

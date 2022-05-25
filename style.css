@@ -252,7 +252,7 @@ nav ul{
   padding-top: 0.7rem;
   font-weight: 700;
   margin-left: 150%;
-  gap: 5rem;
+  gap: 4rem;
   font-size: 1.2rem;
   list-style-type: none;
 }
@@ -264,7 +264,6 @@ nav ul li a {
     position: fixed;
     right: 5%;
     top: 2.5%;
-    height: 25px;
     padding: 0.3rem;
     border: 1px solid #02384c;
   }

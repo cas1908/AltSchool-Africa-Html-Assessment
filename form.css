@@ -31,7 +31,7 @@ header h4 {
 }  
 /* NAV */
 nav {
-  width: 50%;
+  width: 60%;
   display: flex;
 }
 nav ul{
@@ -39,6 +39,7 @@ nav ul{
   display: inline-flex;
   padding-top: 0.7rem;
   gap: 3rem;
+  font-weight: 700;
   font-size: 1.2rem;
   list-style-type: none;
 }
@@ -47,8 +48,8 @@ nav ul li a {
 }
 form {
   box-shadow: -2px -2px 2px #02384c, 2px 2px 5px #02384c;
-  width:60%;
-  margin: 5% auto;
+  width:80%;
+  margin: 10% auto;
   padding: 15px;
   font-size: 25px;
   text-transform: capitalize;
@@ -56,10 +57,13 @@ form {
   border-radius: 5px;
 
 }
+label {
+  font-size: 1rem;
+}
 label:nth-child(1){
   display: flex;
   justify-content: center;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   background-color: #02384c;
   padding: 1rem;
   color: #fff;
@@ -69,13 +73,14 @@ input{
 	width:98%;
   border: 1px solid #023b4c;
   border-radius: 5px;
+  margin-bottom: 2%;
   background-color: #fff;
   outline: none;
 }
 select {
-	width: 50%;
-	padding: 10px;
-  font-size: 16px;
+	width: 98%;
+	padding: 0.5rem;
+  font-size: 1rem;
   background-color: #03678b;
   color: #fff;
   font-weight: 700;
@@ -86,9 +91,79 @@ button{
 	width:70%;
 	margin: 0 15%;
 	padding: 10px;
-  font-size: 20px;
+  font-size: 1rem;
   font-weight: 700;
   color: #fff;
-  border: 1px solid #03678b;
+  border: 1px solid #02384c;
   background: linear-gradient(to top,#023b4c,#03678b);
+}
+
+/* MOBILE DEVICES */
+@media screen and (max-width: 40em) {
+  body {
+    width: 100%;
+  }
+  header{
+    padding: 0.5rem 0;
+  }
+  /* NAV */
+nav {
+  width: 10%;
+  display: block;
+  position: absolute;
+  height: 100vh;
+  top: 20%;
+  right: 0%;
+  top: 0;
+  overflow-x: hidden;
+  padding: 0.3rem 1rem;
+  transition: all 0.2s linear;
+}
+nav ul{
+  width: 100%;
+  position: absolute;
+  top: 20%;
+  display: flex;
+  flex-direction: column;
+  padding-top: 0.7rem;
+  font-weight: 700;
+  margin-left: 150%;
+  gap: 4rem;
+  font-size: 1.2rem;
+  list-style-type: none;
+}
+nav ul li a {
+  text-decoration: none;
+}
+  .menu-btn{
+    width: 10%;
+    position: fixed;
+    right: 5%;
+    top: 2.5%;
+    padding: 0.3rem;
+    border: 1px solid #02384c;
+  }
+  .menu-btn span {
+    border-bottom: 3px solid #03678b;
+    display: block;
+    width: 100%;
+    margin-bottom: 10%;
+  }
+  header.active nav {
+    width: 70%;
+    border-left: 1px solid #03678b;
+    background-color: #fff;
+  }
+  header.active nav .menu-btn span:nth-child(1) {
+    transform: translate(0px, 5px) rotate(35deg);
+  }
+  header.active nav .menu-btn span:nth-child(2) {
+    opacity: 0;
+  }
+  header.active nav .menu-btn span:nth-child(3) {
+    transform: translate(0px, -6px) rotate(-35deg);
+  }
+  header.active nav ul {
+    margin-left: 30%;
+  }
 }

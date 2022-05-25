@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
 	<title>Form</title>
     <link href="form.css" rel="stylesheet" type="text/css" />
     <link href="https://fonts.googleapis.com/css2?family=Grenze+Gotisch:wght@100;200;300;400;700;900&family=Poppins:wght@100;300;400;600&family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
@@ -9,7 +11,7 @@
     <header>
       <h4>cas</h4>
       <nav>
-        <div class="menu-btn">
+        <div class="menu-btn" onclick="toggle()">
           <span></span>
           <span></span>
           <span></span>
@@ -23,16 +25,13 @@
         </div>
       </nav>
     </header>
-<form>
-    <label for="form">CREATE AN ACCOUNT</label> <br><br>
+	<form>
+    	<label for="form">CREATE AN ACCOUNT</label> <br>
 		<label>firstname: <input type="text" name="" placeholder="John" required></label> 
-		<br>
 		<br>
 		<label>Lastname: <input type="text" name="" placeholder="Doe" required></label> 
 		<br>
-		<br>
 		<label>phone number: <input type="numbers" name="" placeholder="+1 000 000 000" required></label> 
-		<br>
 		<br>
 		<label>Gender:</label>
 		<select>
@@ -41,22 +40,22 @@
 			<option>i'd rather not say</option>
 		</select>
 		<br>
-		<br>
 		<label>Country: <input type="text" name="" placeholder="nigeria" required></label>
-    <br>
-    <br>
+    	<br>
 		<label>state/province: <input type="text" name="" placeholder="lagos" required></label> 
-		<br>
 		<br>
 		<label>Username: <input type="text" name="" placeholder="JohnDoe" required></label> 
 		<br>
-		<br>
 		<label>Create password: <input type="password" name="" placeholder="*******" required></label> 
 		<br>
-		<br>
 		<label>confirm password: <input type="password" name="" placeholder="*******" required></label> 
-    <br><br>
-      <button>Sign Up</button>
+    	<br><br>
+      	<button>Sign Up</button>
 	</form>
+	<script>
+		function toggle(){
+		  document.querySelector('header').classList.toggle('active');
+		}
+	</script>
 </body>
 </html>

@@ -28,7 +28,7 @@ header h4 {
 }  
 /* NAV */
 nav {
-  width: 60%;
+  width: 70%;
   display: flex;
 }
 nav ul{
@@ -91,9 +91,8 @@ main {
   border-radius: 100%;
   width: 40%;
   text-align: center;
-  height: 150px;
   font-size: 1.5rem;
-  padding-top: 3rem;
+  padding: 1rem;
   color: #fff;
   position: absolute;
   right: 15%;
@@ -106,7 +105,7 @@ main {
   text-align: center;
 }
 .goal ul {
-  font-size: 1.2rem;
+  font-size: 1rem;
   list-style-type: disc;
 }
 .main-content {
@@ -125,13 +124,13 @@ main {
   margin-bottom: 5%;
 }
 .goal h3, .education h3, .job h3, .hobbies h3, #contact-me h3{
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   padding: 1rem;
   background-color: #03678b;
   color: #fff;
 }
 .education section h4, .job section h4, .hobbies section h4 {
-  font-size: 1.2rem;
+  font-size: 1rem;
   width: 80%;
   margin-bottom: 1%;
 }
@@ -195,6 +194,7 @@ select{
   padding: 0.5rem;
   font-weight: 700;
   outline: none;
+  width: 98%;
   font-size: 0.9rem;
   border: 1px solid #02384c;
 }
@@ -309,17 +309,15 @@ nav ul li a {
   .intro-text h1 {
     font-size: 1.5rem;
     width: 40%;
-    height: 100px;
-    padding-top: 1rem;
+    height: 80px;
+    padding: 1rem;
     left: 0%;
     bottom: 40%;
   }
   .intro-text p {
-    /*width: 47%; */
     text-align: center;
-    /* height: 120px; */
     font-size: 1.1rem;
-    padding: 2rem 1rem;
+    padding: 1.2rem 0.5rem;
     right: 0%;
   }
   .goal ul {
